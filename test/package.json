@@ -1,0 +1,16 @@
+{
+  "name": "v-rr",
+  "version": "0.0.0-development",
+  "description": "Utility for creating Universal macOS applications from two x64 and arm64 Electron applications",
+  "main": "v-rr/cjs/index.js",
+  "module": "v-rr/esm/index.js",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "apple silicon",
+    "universal"
+  ],
+  "engines": {
+    "node": ">=8.6"
+  }
+}
