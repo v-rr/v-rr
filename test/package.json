@@ -1,17 +1,22 @@
 {
   "name": "v-rr",
-  "version": "0.0.0-development",
-  "description": "Utility for creating Universal macOS applications from two x64 and arm64 Electron applications",
-  "main": "v-rr/cjs/index.js",
-  "module": "v-rr/esm/index.js",
+  "version": "1.1.0",
+  "homepage": "https://github.com/v-rr/v-rr",
   "license": "MIT",
-  "keywords": [
-    "electron",
-    "apple silicon",
-    "universal" ,
-    "test"
-  ],
-  "engines": {
-    "node": ">=8.6"
+  "main": "lib/immersive-reader-sdk.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v-rr/v-rr.git",
+    "directory":"js"
+  },
+  "types": "lib/immersive-reader-sdk.d.ts",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:details": "webpack --config webpack.config.js --display-error-details",
+    "prepublish": "yarn build",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest"
   }
 }
